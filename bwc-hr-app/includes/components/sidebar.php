@@ -14,7 +14,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
             $links = [
                 'salary_cert.php' => ['Salary Certificate', 'fas fa-money-check-alt'],
                 'noc_cert.php' => ['NOC Certificate', 'fas fa-file-alt'],
-                'leave_balance.php' => ['Leave Balance', 'fas fa-calendar-check'],
             ];
 
             foreach ($links as $link => $data) {
