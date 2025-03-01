@@ -23,7 +23,7 @@ if (isset($_POST['documentType'])) {
     }
 
     $fullName = trim(ucwords(strtolower(trim($user['NAME']))) . ' ' .
-        ucwords(strtolower(trim($user['SECOND_NAME']))) . ' ' .
+        ucwords(strtolower(trim($user['SECOND_NAME'] ?? ''))) . ' ' .
         ucwords(strtolower(trim($user['LAST_NAME']))));
     $fullName = preg_replace('/\s+/', ' ', $fullName);
     
